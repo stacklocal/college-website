@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+   .navbar-brand img {
+       width:70px !important;
+       height: 70px !important;
+       margin-top: -22px !important;
+   }
+}
