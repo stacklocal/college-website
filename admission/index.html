@@ -229,33 +229,108 @@
                 font-size: 150px;
             }
         }
+
+         /* dropdown menu custom css */
+
+    /* hover dropdown menus */
+    @media only screen and (max-width: 991px) {
+      .navbar-hover .show>.dropdown-toggle::after {
+        transform: rotate(-90deg);
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .navbar-hover .collapse ul li {
+        position: relative;
+      }
+
+      .navbar-hover .collapse ul li:hover>ul {
+        display: block
+      }
+
+      .navbar-hover .collapse ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 250px;
+        display: none
+      }
+
+      .navbar-hover .collapse ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 250px;
+        display: none
+      }
+
+      /*.navbar-hover .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}*/
+    }
+
+    .dropdown-menu li a {
+      color: black !important;
+    }
     </style>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-hover">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage"><img style="margin-top: 80px;" src="logo.png" alt="website logo"
-                        width="150" height="150"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/">Home</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="admission.html">Admission</a></li>
-        <li><a href="Gallery.html">Gallery</a></li>
-       <li><a href="contactus.html">CONTACT Us</a></li>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage"><img style="margin-top: 80px;" src="logo.png" alt="website logo"
+                width="150" height="150"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">Home</a></li>
+              <li>
+    
+                <!-- dropdown -->
+                <div class="dropdown">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" onclick="event.preventDefault();" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Academics
+                </a>
+                <ul class="dropdown-menu">
+    
+                  <li><a class="dropdown-item dropdown-toggle" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">Courses</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">B.SC (Seats 120)</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">BCA (Seats 120)</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">M.SC (Seats 120)</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">MCA (Seats 120)</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">B.COM (Seats 120)</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">M.COM (Seats 60)</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=SYWIjQOu/+4=">M.A (Seats 60)</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item dropdown-toggle" target="_blank"   href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=6poVOm/nZuM=">Departments</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" target="_blank"   href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=6poVOm/nZuM=" >BIO-TECHNOLOGY</a></li>
+                      <li><a class="dropdown-item" target="_blank"   href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=6poVOm/nZuM=">BOTANY</a></li>
+                      <li><a class="dropdown-item" target="_blank"   href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=6poVOm/nZuM=">ECONOMICS</a></li>
+                      <li><a class="dropdown-item" target="_blank"   href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=6poVOm/nZuM=">ENGLISH</a></li>
+                      <li><a class="dropdown-item" target="_blank"   href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=6poVOm/nZuM=">MUSIC (I)</a></li>
+                      <li><a class="dropdown-item" target="_blank"   href="https://gcggn.ac.in/Data?Menu=BFcJrpmMV3E=&SubMenu=6poVOm/nZuM=">PSYCHOLOGY</a></li>
+                    </ul>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <!--  -->
+              <li><a href="/admission">Admission</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact-us">CONTACT Us</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
 
     <div class="jumbotron text-center" style="margin-bottom: 20px;">
@@ -338,5 +413,37 @@
 
 
 </body>
-
+<script>
+    $(function () {
+      // ------------------------------------------------------- //
+      // Multi Level dropdowns
+      // ------------------------------------------------------ //
+      // $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+      //   event.preventDefault();
+      //   event.stopPropagation();
+      //   $(this).siblings().toggleClass("show");
+      //   if (!$(this).next().hasClass('show')) {
+      //     $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+      //   }
+      //   $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      //     $('.dropdown-submenu .show').removeClass("show");
+      //   });
+      // });
+      ///////
+  
+      $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        $(this).siblings().toggleClass("show");
+        if (!$(this).next().hasClass('show')) {
+          $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+        }
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+          $('.dropdown-submenu .show').removeClass("show");
+        });
+      });
+  
+    });
+  
+  </script>
 </html>
